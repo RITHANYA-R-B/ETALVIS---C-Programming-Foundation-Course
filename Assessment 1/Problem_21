@@ -1,0 +1,10 @@
+//Get a number and subtract 5 if it is odd
+#include <stdio.h>
+int main()
+{
+    int x,y=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    x%2==0?printf("Result = %d",x):printf("Result = %d",x-5);
+    return 0;
+}
