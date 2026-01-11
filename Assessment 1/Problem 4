@@ -1,4 +1,4 @@
-//Get a number and divide it by 6
+//Get a number, divide it by 6 and print the result
 #include <stdio.h>
 int main()
 {
