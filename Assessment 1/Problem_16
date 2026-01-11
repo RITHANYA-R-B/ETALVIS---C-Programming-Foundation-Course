@@ -1,0 +1,11 @@
+//Get a four digit number and reverse it's last two digits alone
+#include <stdio.h>
+int main()
+{
+    int x,y=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=(x/100)*100+(x%10)*10+(x/10)%10;
+    printf("Result = %d",y);
+    return 0;
+}
