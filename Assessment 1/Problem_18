@@ -1,0 +1,11 @@
+//Get a two digit number and make the ten's digit 1
+#include <stdio.h>
+int main()
+{
+    int x,y=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=(x%10)+10;
+    printf("Result = %d",y);
+    return 0;
+}
