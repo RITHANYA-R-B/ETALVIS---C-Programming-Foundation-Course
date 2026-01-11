@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-    int x,y=0;
+    int x;
     printf("Enter Number: ");
     scanf("%d",&x);
     x%2==0?printf("Result = %d",x):printf("Result = %d",x-5);
