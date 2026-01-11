@@ -1,3 +1,4 @@
+//Get a number, divide it by 8 and print the remainder
 #include <stdio.h>
 int main()
 {
