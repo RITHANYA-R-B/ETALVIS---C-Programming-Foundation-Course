@@ -1,0 +1,11 @@
+//Get a three digit number and print the ten's digit
+#include <stdio.h>
+int main()
+{
+    int x,y,z;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=(x/10)%10;
+    printf("Result = %d",y);
+    return 0;
+}
