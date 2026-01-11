@@ -1,0 +1,17 @@
+//Get a three digit number, print the sum of digits if its less than 10, else add the digits of the sum and continue the same until a single digit sum arrives. 
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=x%10+(x/10)%10+x/100;
+    if(y<10)
+    printf("Result = %d",y);
+    else{
+    while(y>9){
+    y=y%10+y/10;}
+    printf("Result = %d",y);
+    }
+    return 0;
+}
