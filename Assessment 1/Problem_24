@@ -1,0 +1,12 @@
+//Get a three digit number and subtract 5 if it's one's and 100's digit numbers are odd
+#include <stdio.h>
+int main()
+{
+    int x,y,z;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=x%10;
+    z=x/100;
+    y%2!=0 && z%2!=0?printf("Result = %d",x-5):printf("Result = %d",x);
+    return 0;
+}
