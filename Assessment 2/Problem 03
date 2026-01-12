@@ -1,0 +1,11 @@
+// Check if the number is less than 50
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=x<50;
+    printf("Result = %d",y);
+    return 0;
+}
