@@ -1,0 +1,11 @@
+// Get a four digit number and check if the first two digits and last 2 digits are the same
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=x%100==x/100;
+    printf("Result = %d",y);
+    return 0;
+}
