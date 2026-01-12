@@ -1,0 +1,12 @@
+// Get a four digit number and check if the one's digit and ten's digit are same
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    y=x%10==(x/10)%10;
+    // OR y=x%10==(x%100)/10;
+    printf("Result = %d",y);
+    return 0;
+}
