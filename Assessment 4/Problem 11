@@ -1,0 +1,14 @@
+// Get a number and print the total number of digits.
+#include<stdio.h>
+int main()
+{
+    int x,n=0;
+    scanf("%d",&x);
+    loop: if(x>0){
+        x=x/10;
+        n=n+1;
+        goto loop;
+    }
+    printf("%d",n);
+    return 0;
+}
