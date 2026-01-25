@@ -1,0 +1,14 @@
+// Get a number and print the reverse of it.
+#include<stdio.h>
+int main()
+{
+    int x,n;
+    scanf("%d",&x);
+    loop: if(x>0){
+        n=x%10;
+        printf("%d",n);
+        x=x/10;
+        goto loop;
+    }
+    return 0;
+}
