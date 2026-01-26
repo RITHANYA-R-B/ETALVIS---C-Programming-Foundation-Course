@@ -1,0 +1,11 @@
+// Print the sum of two digit odd numbers whose ten's digits is 7 using for loop
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int x=10;x<=99;x++){
+        if(x%2==1 && x/10==7)
+        sum=sum+x;
+    }
+    printf("%d",sum);
+    return 0;
+}
