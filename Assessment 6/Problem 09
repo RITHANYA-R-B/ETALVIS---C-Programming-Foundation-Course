@@ -1,0 +1,12 @@
+// Print the sum of two digit numbers whose one's digits is 5 using while loop
+#include<stdio.h>
+int main(){
+    int x=10,sum=0;
+    while(x<100){
+        if(x%10==5)
+            sum=sum+x;
+        x++;
+    }
+    printf("%d",sum);
+    return 0;
+}
