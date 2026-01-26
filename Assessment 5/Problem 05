@@ -1,0 +1,10 @@
+// Print odd numbers from 1 to 9 using for loop.
+#include<stdio.h>
+int main()
+{
+    for(int x=1;x<=9;x++){
+        if(x%2==1)
+        printf("%d\n",x);
+    }
+    return 0;
+}
