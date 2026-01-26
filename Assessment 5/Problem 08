@@ -1,0 +1,9 @@
+// Print two digit even numbers whose sum of digits is 6 using for loop
+#include<stdio.h>
+int main(){
+    for(int x=10;x<=99;x++){
+        if(x%2==0 && x%10+x/10==6)
+        printf("%d\n",x);
+    }
+    return 0;
+}
