@@ -1,0 +1,10 @@
+// Print sum of 6 to 1 using for loop.
+#include<stdio.h>
+int main()
+{
+    int sum=0;
+    for(int x=6;x>=1;x--)
+        sum=sum+x;
+    printf("%d",sum);
+    return 0;
+}
