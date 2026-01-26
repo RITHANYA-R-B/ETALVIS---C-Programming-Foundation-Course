@@ -1,0 +1,12 @@
+// Print odd numbers from 1 to 9 using while loop.
+#include<stdio.h>
+int main()
+{
+    int x=1;
+    while(x<=9){
+        if(x%2==1)
+            printf("%d\n",x);
+        x++;
+    }
+    return 0;
+}
