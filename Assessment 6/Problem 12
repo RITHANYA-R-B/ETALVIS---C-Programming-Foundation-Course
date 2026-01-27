@@ -1,0 +1,13 @@
+// Print the sum of all digits in a number using while loop
+#include<stdio.h>
+int main(){
+    int x,sum=0,n;
+    scanf("%d",&x);
+    while(x>0){
+        n=x%10;
+        sum=sum+n;
+        x=x/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
