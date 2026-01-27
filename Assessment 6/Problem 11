@@ -1,0 +1,12 @@
+// Print the total number of digits in the number using while loop
+#include<stdio.h>
+int main(){
+    int x,n=0;
+    scanf("%d",&x);
+    while(x>0){
+        x=x/10;
+        n++;
+    }
+    printf("%d",n);
+    return 0;
+}
