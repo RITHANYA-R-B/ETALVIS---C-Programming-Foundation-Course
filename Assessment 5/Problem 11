@@ -1,0 +1,14 @@
+// Print the total number of digits in the number using for loop
+#include<stdio.h>
+int main(){
+    int x,n;
+    scanf("%d",&x);
+    for(n=0;n>=0;n++){
+        if(x>0)
+          x=x/10;
+        else
+          break;
+    }
+    printf("%d",n);
+    return 0;
+}
