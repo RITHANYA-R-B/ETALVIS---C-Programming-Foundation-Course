@@ -1,0 +1,19 @@
+// Print whether the middle two digits of a 4-digit number is prime or not using while loop
+#include<stdio.h>
+int main(){
+    int x,n=0,i=2;;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    x=x/10;
+    x=x%100;
+    while(i<=x/2){
+        if(x%i==0)
+            n++;
+            i++;
+    }
+    if(n==0&&x!=1&&x!=0)
+    printf("Prime");
+    else
+    printf("Not Prime");
+    return 0;
+}
