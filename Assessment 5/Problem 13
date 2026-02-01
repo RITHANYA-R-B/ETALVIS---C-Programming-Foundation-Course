@@ -1,0 +1,12 @@
+// Print the reverse of the number using for loop
+#include<stdio.h>
+int main(){
+    int x,r=0;
+    scanf("%d",&x);
+    for(;x>0;){
+        r=x%10+r*10;
+        x=x/10;
+    }
+    printf("%d",r);
+    return 0;
+}
