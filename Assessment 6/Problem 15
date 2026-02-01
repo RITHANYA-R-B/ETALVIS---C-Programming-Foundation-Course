@@ -1,0 +1,20 @@
+// Get a number, if its last digit is even print it, else subtract one from the first digit and print it, using while loop
+#include<stdio.h>
+int main(){
+    int x,n=0,p=1;
+    scanf("%d",&x);
+    if((x%10)%2==0)
+    printf("%d",x);
+    else{
+    int m=x;
+    while(x>0){
+        n++;
+        p=10*p;
+        x=x/10;
+    }
+    int p1=p/10;
+    m=m%p1+((m/p1)-1)*p1;
+    printf("%d",m);
+    }
+    return 0;
+}
