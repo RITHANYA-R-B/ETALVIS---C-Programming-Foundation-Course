@@ -1,0 +1,17 @@
+// Print whether the last two digits of a number is prime or not using for loop
+#include<stdio.h>
+int main(){
+    int x,n=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    x=x%100;
+    for(int i=2;i<=x/2;i++){
+        if(x%i==0)
+            n++;
+    }
+    if(n==0&&x!=1&&x!=0)
+    printf("Prime");
+    else
+    printf("Not Prime");
+    return 0;
+}
