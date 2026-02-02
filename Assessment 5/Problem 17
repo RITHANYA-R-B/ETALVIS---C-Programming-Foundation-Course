@@ -1,0 +1,29 @@
+// Print whether prime or not AND the sum of digit is 14 or not using for loop
+#include<stdio.h>
+int main(){
+    int x,n=0,sum=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    for(int i=2;i<=x/2;i++){
+        if(x%i==0)
+            n++;
+    }
+    int p=x;
+    for(;p>0;p=p/10){
+    int m=p%10;
+    sum=sum+m;
+    }
+    if(n==0 && x>1){
+    if(sum==14)
+    printf("Prime & Sum of digits is 14.");
+    else
+    printf("Prime & Sum of digits is not 14.");
+    }
+    else{
+    if(sum==14)
+    printf("Not Prime but Sum of digits is 14.");
+    else
+    printf("Not Prime & Sum of digits is not 14.");
+    }
+    return 0;
+}
