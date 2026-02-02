@@ -1,0 +1,13 @@
+// Print the total number of odd digits in the number using for loop
+#include<stdio.h>
+int main(){
+    int x,i=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    for(;x>0;x=x/10){
+        if((x%10)%2==1)
+            i++;
+    }
+    printf("%d",i);
+    return 0;
+}
