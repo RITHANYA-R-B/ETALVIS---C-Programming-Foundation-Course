@@ -1,0 +1,13 @@
+// Print the total number of two-digit perfect square numbers in the number using for loop
+#include<stdio.h>
+int main(){
+    int x,n=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    for(;x>0;x=x/10){
+        if(x%100==16||x%100==25||x%100==36||x%100==49||x%100==64||x%100==81)
+            n++;
+    }
+    printf("%d",n);
+    return 0;
+}
