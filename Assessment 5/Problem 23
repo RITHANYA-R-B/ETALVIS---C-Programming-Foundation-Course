@@ -1,0 +1,13 @@
+// Print the total number of single-digit perfect square numbers in the number using for loop
+#include<stdio.h>
+int main(){
+    int x,n=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    for(;x>0;x=x/10){
+        if(x%10==0 || x%10==1 || x%10==4 || x%10==9)
+            n++;
+    }
+    printf("%d",n);
+    return 0;
+}
