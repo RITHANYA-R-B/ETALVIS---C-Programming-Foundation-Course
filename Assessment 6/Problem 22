@@ -1,0 +1,14 @@
+// Print the total number of two-digit odd numbers in the number using while loop
+#include<stdio.h>
+int main(){
+    int x,i=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    while(x>9){
+        if((x%100)%2==1)
+            i++;
+        x=x/10;
+    }
+    printf("%d",i);
+    return 0;
+}
