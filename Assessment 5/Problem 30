@@ -1,10 +1,11 @@
 // Get two numbers and print the HCF of those numbers using for loop
 #include<stdio.h>
+#include<stdlib.h>
 int main(){
     int x,y;
     printf("Enter Two Numbers: ");
     scanf("%d%d",&x,&y);
-    int i=x>y?y:x;
+    int i=x>y?abs(y):abs(x);
     for(i;;i--){
         if(x==0 && y==0){
             break;
