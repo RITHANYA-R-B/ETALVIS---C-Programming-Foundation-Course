@@ -1,0 +1,13 @@
+// Print the total number of two-digit odd numbers in the number using for loop
+#include<stdio.h>
+int main(){
+    int x,i=0;
+    printf("Enter Number: ");
+    scanf("%d",&x);
+    for(;x>9;x=x/10){
+        if((x%100)%2==1)
+            i++;
+    }
+    printf("%d",i);
+    return 0;
+}
