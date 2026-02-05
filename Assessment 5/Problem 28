@@ -1,0 +1,18 @@
+// Get two numbers and print the LCM of those numbers using for loop
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("Enter Two Numbers: ");
+    scanf("%d%d",&x,&y);
+    for(int i=1;;i++){
+        if(x==0 || y==0){
+            printf("0");
+            break;
+        }
+        if(i%x==0 && i%y==0){
+            printf("%d",i);
+            break;
+        }
+    }
+    return 0;
+}
