@@ -1,0 +1,13 @@
+// Print the sum of 6 to 1 (using functions)
+#include<stdio.h>
+void disp_rsum();
+int main(){
+    disp_rsum();
+    return 0;
+}
+void disp_rsum(){
+    int sum=0;
+    for(int i=6;i>=1;i--)
+        sum = sum + i;
+    printf("%d",sum); 
+}
