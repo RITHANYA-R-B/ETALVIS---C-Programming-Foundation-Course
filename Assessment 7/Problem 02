@@ -6,6 +6,6 @@ int main(){
     return 0;
 }
 void disp_descend(){
-        for(int i=5;i>=1;i--)
+    for(int i=5;i>=1;i--)
         printf("%d\n",i);
 }
