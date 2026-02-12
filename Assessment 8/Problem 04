@@ -1,0 +1,15 @@
+// Print the sum of two digit odd numbers whose ten's digit is 7 using function (with return value)
+#include<stdio.h>
+int disp_2digit_odd_sum_tens7();
+int main(){
+    int y=disp_2digit_odd_sum_tens7();
+    printf("%d",y);
+    return 0;
+}
+int disp_2digit_odd_sum_tens7(){
+    int y=0;
+    for(int i=10;i<=99;i++)
+        if(i%2==1 && i/10==7)
+            y=y+i;
+    return y;
+}
