@@ -1,0 +1,19 @@
+// Get a number and print the total number of digts in it using function (with return value)
+#include<stdio.h>
+int count_total_digits(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    int y=count_total_digits(x);
+    printf("%d",y);
+    return 0;
+}
+int count_total_digits(int x){
+    int y=0;
+    if(x==0)
+        y=1;
+    else
+        for(;x>0;x=x/10)
+            y++;
+    return y;
+}
