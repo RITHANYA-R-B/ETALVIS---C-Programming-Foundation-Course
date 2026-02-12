@@ -1,6 +1,6 @@
 // Get a number and print the total number of digts in it (using functions)
 #include<stdio.h>
-void count_total_digits(int );
+void count_total_digits(int x);
 int main(){
     int x;
     scanf("%d",&x);
@@ -9,7 +9,10 @@ int main(){
 }
 void count_total_digits(int x){
     int n=0;
-    for(;x>0;x=x/10)
-        n++;
+    if(x==0)
+        n=1;
+    else
+        for(;x>0;x=x/10)
+            n++;
     printf("%d",n);
 }
