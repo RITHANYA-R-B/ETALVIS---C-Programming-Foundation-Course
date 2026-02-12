@@ -1,0 +1,14 @@
+// Print sum of 6 to 1 using function (with return value)
+#include<stdio.h>
+int disp_rsum();
+int main(){
+    int y=disp_rsum();
+    printf("%d",y);
+    return 0;
+}
+int disp_rsum(){
+    int y=0;
+    for(int i=6;i>=1;i--)
+        y=y+i;
+    return y;
+}
