@@ -1,0 +1,15 @@
+// Print sum of two digit numbers whose one's digit is 5 using function (with return value)
+#include<stdio.h>
+int disp_2digit_ones5();
+int main(){
+    int y=disp_2digit_ones5();
+    printf("%d",y);
+    return 0;
+}
+int disp_2digit_ones5(){
+    int y=0;
+    for(int i=10;i<=99;i++)
+        if(i%10==5)
+            y=y+i;
+    return y;
+}
