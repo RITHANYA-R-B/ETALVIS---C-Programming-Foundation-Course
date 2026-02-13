@@ -1,0 +1,16 @@
+// Get a number and print the sum of all digts using function (with a return value)
+#include<stdio.h>
+int disp_sum_all_digits(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    int y=disp_sum_all_digits(x);
+    printf("%d",y);
+    return 0;
+}
+int disp_sum_all_digits(int x){
+    int y=0;
+    for(;x>0;x=x/10)
+        y=y+x%10;
+    return y;
+}
