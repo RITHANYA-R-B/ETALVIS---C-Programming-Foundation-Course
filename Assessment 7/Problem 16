@@ -9,11 +9,11 @@ int main(){
 }
 void check_prime(int x){
     int p=0;
-        for(int i=2;i<=x/2;i++)
-            if(x%i==0){
-                p=1;
-                break;
-            }
+    for(int i=2;i<=x/2;i++)
+        if(x%i==0){
+            p=1;
+            break;
+        }
     if(p==0 && x>1)
         printf("Prime");
     else
