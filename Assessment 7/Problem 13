@@ -1,0 +1,15 @@
+// Get a number and print the reverse of it (using functions)
+#include<stdio.h>
+void disp_reverse_number(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    disp_reverse_number(x);
+    return 0;
+}
+void disp_reverse_number(int x){
+    int r=0;
+    for(;x>0;x=x/10)
+        r=r*10+x%10;
+    printf("%d",r);
+}
