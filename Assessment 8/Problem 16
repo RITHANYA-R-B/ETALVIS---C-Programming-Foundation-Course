@@ -1,0 +1,15 @@
+// Print the biggest 4 digit number which is divisible by 7 and 9 using function (with a return value)
+#include<stdio.h>
+int disp_biggest_4digit_div7_9();
+int main(){
+    int y=disp_biggest_4digit_div7_9();
+    printf("%d",y);
+    return 0;
+}
+int disp_biggest_4digit_div7_9(){
+    int y;
+    for(y=9999;y>=1000;y--)
+        if(y%7==0 && y%9==0)
+            break;
+    return y;
+}
