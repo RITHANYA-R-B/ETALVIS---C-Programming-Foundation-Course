@@ -1,0 +1,18 @@
+// Print the total count of numbers which are less than 100000 and whose sum of digits is 14 (using functions)
+#include<stdio.h>
+void disp_count_sum14();
+int main(){
+    disp_count_sum14();
+    return 0;
+}
+void disp_count_sum14(){
+    int x,n=0;
+    for(x=0;x<100000;x++){
+        int sum=0,i=x;
+        for(;i>0;i=i/10)
+            sum=sum+i%10;
+        if(sum==14)
+            n++;
+    }
+    printf("%d",n);
+}
