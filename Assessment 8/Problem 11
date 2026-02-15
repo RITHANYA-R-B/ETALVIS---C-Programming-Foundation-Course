@@ -1,0 +1,17 @@
+// Get a number and print the total count of odd digits in the number using function (with a return value)
+#include<stdio.h>
+int disp_total_odd_digits(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    int n=disp_total_odd_digits(x);
+    printf("%d",n);
+    return 0;
+}
+int disp_total_odd_digits(int x){
+    int n=0;
+    for(;x>0;x=x/10)
+        if(x%2==1)
+            n++;
+    return n;
+}
