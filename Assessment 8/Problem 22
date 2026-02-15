@@ -1,0 +1,16 @@
+// Get a number and print the total number of two-digit odd numbers in the number (using functions)
+#include<stdio.h>
+void disp_total_2digit_odd(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    disp_total_2digit_odd(x);
+    return 0;
+}
+void disp_total_2digit_odd(int x){
+    int n=0;
+    for(;x>=10;x=x/10)
+        if((x%100)%2==1)
+            n++;
+    printf("%d",n);
+}
