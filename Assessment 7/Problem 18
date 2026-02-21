@@ -1,0 +1,21 @@
+// Get a number and print whether the number's last two digits (together) is prime or not (using functions)
+#include<stdio.h>
+void check_last_2digits_prime(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    check_last_2digits_prime(x);
+    return 0;
+}
+void check_last_2digits_prime(int x){
+    int p=0;
+    for(int i=2;i<=(x%100)/2;i++)
+        if((x%100)%i==0){
+            p=1;
+            break;
+        }
+    if(p==0 && x%100>1)
+    printf("Prime");
+    else
+    printf("Not Prime");
+}
