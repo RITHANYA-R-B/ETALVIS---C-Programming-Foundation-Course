@@ -1,0 +1,18 @@
+// Get a number, if its last digit is even print the number, else subtract one from the first digit and print it (using functions)
+#include<stdio.h>
+void check_last_digit_odd(int x);
+int main(){
+    int x;
+    scanf("%d",&x);
+    check_last_digit_odd(x);
+    return 0;
+}
+void check_last_digit_odd(int x){
+    int i=x,p=1;
+    for(;x>=10;x=x/10)
+        p=10*p;
+    if((i%10)%2==0)
+        printf("%d",i);
+    else
+        printf("%d",i%p+(x-1)*p);
+}
